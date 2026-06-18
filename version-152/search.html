@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://young-band-ba97.laodayizhi.workers.dev/ads-widget.js"></script>
+<title>影片搜索 - 欧美最新视频-最新热门视频片库-高清视频在线播放</title>
+  <meta name="description" content="搜索欧美最新视频、热门影片、高清视频在线播放内容。">
+  <meta name="keywords" content="欧美最新视频,最新视频片库,高清视频在线播放,欧美视频,视频更新,热门内容,影片搜索">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<nav class="site-nav">
+  <div class="nav-inner">
+    <a class="brand" href="index.html" aria-label="欧美片库">
+      <span class="brand-mark" aria-hidden="true">▶</span>
+      <span class="brand-name">欧美片库</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-label="打开导航" data-nav-toggle>
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <div class="nav-links" data-nav-menu>
+      <a href="index.html">首页</a>
+      <a href="categories.html">分类</a>
+      <a href="categories/oumei.html">欧美片</a>
+      <a href="ranking.html">排行榜</a>
+      <a href="search.html">搜索</a>
+    </div>
+  </div>
+</nav>
+<main class="page">
+  <section class="page-hero">
+    <div class="page-title">
+      <div class="breadcrumb"><a href="index.html">首页</a><span>搜索</span></div>
+      <h1>影片搜索</h1>
+      <p>输入片名、地区、类型、年份或标签，快速筛选片库内容。</p>
+      <span class="count-pill">共 2000 部影片</span>
+    </div>
+  </section>
+  <section class="search-page">
+    <div class="content-wrap">
+      <div class="search-panel">
+        <input id="searchInput" type="search" placeholder="搜索片名、简介、标签">
+        <select id="regionFilter" aria-label="地区筛选">
+          <option value="">全部地区</option>
+          <option value="oumei">欧美</option>
+          <option value="guochan">国产华语</option>
+          <option value="rihan">日韩</option>
+          <option value="other">其他地区</option>
+        </select>
+        <select id="typeFilter" aria-label="类型筛选">
+          <option value="">全部类型</option>
+          <option value="movie">电影</option>
+          <option value="series">剧集</option>
+          <option value="animation">动漫动画</option>
+          <option value="variety">综艺</option>
+          <option value="documentary">纪录片</option>
+        </select>
+        <select id="yearFilter" aria-label="年份筛选">
+          <option value="">全部年份</option>
+          <option value="2030">2030</option>
+          <option value="2029">2029</option>
+          <option value="2028">2028</option>
+          <option value="2027">2027</option>
+          <option value="2026">2026</option>
+          <option value="2025">2025</option>
+          <option value="2024">2024</option>
+          <option value="2023">2023</option>
+          <option value="2022">2022</option>
+          <option value="2021">2021</option>
+          <option value="2020">2020</option>
+          <option value="2019">2019</option>
+          <option value="2018">2018</option>
+          <option value="2017">2017</option>
+          <option value="2016">2016</option>
+          <option value="2015">2015</option>
+          <option value="2014">2014</option>
+          <option value="2013">2013</option>
+          <option value="2012">2012</option>
+          <option value="2011">2011</option>
+          <option value="2010">2010</option>
+          <option value="2009">2009</option>
+          <option value="2008">2008</option>
+          <option value="2007">2007</option>
+          <option value="2006">2006</option>
+          <option value="2005">2005</option>
+          <option value="2004">2004</option>
+          <option value="2003">2003</option>
+          <option value="2002">2002</option>
+          <option value="2001">2001</option>
+        </select>
+        <button class="btn" id="searchReset" type="button">重置</button>
+      </div>
+      <p class="count-pill" id="searchCount"></p>
+      <div class="movie-grid" id="searchResults"></div>
+    </div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-about">
+      <div class="footer-logo">
+        <span class="brand-mark" aria-hidden="true">▶</span>
+        <span>欧美片库</span>
+      </div>
+      <p>汇集欧美最新视频栏目内容，按类型、热度和更新时间展示。</p>
+    </div>
+    <div>
+      <h3>分类浏览</h3>
+      <a href="categories/oumei.html">欧美最新视频</a>
+      <a href="categories/guochan.html">国产华语片库</a>
+      <a href="categories/rihan.html">日韩精选片库</a>
+      <a href="categories/movie.html">高清电影频道</a>
+    </div>
+    <div>
+      <h3>站内入口</h3>
+      <a href="categories.html">分类总览</a>
+      <a href="ranking.html">综合排行榜</a>
+      <a href="search.html">影片搜索</a>
+      <a href="categories/all.html">全部影片</a>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026 欧美片库</div>
+</footer>
+<script src="assets/app.js"></script>
+<script src="assets/search-data.js"></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?60fa60a3da050a73eefefaaebe0afaf5";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
